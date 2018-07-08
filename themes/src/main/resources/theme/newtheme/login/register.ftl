@@ -41,13 +41,13 @@
                 </div>
             </div>
           </#if>
-			<div class="form-group">
+			<div class="${properties.kcFormGroupClass!} ${messagesPerField.printIfExists('mobile',properties.kcFormGroupErrorClass!)}">
 				<div class="${properties.kcLabelWrapperClass!}">
 					<label for="user.attributes.mobile" class="${properties.kcLabelClass!}">Mobile number</label>
 				</div>
 
-				<div class="col-sm-10 col-md-10">
-					<input type="text" class="${properties.kcInputClass!}"  id="user.attributes.mobile" name="user.attributes.mobile"/>
+				<div class="${properties.kcInputWrapperClass!}">
+					<input type="text" class="${properties.kcInputClass!}" id="user.attributes.mobile" name="user.attributes.mobile"/>
 				</div>
 			</div>
             <#if passwordRequired>
